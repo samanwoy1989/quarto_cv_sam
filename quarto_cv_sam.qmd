@@ -38,7 +38,8 @@ sidebar:
         - Jupyter
         - RStudio
         - VS Code
-        - Terminal 
+        - Terminal
+        - JIRA, Confluence
     - name: Education
       items:
         - text: "Ph.D. in Biotechnoloy"
@@ -96,7 +97,7 @@ cvproj <- function(tbl,what,role,items){
 
 # Summary
 
-I am a results-driven Bioinformatics Scientist with a proven track record in both industry and academia. My expertise spans data analysis, quality assessment, and visualization, providing critical insights that drive research and development. I excel at transforming complex datasets into **actionable insights**, advancing biomedical sciences, and supporting targeted therapy development. My academic background includes advanced transcriptomic data analysis and the creation of reproducible research packages, enhancing research capabilities and driving innovation.
+I am a results-driven Bioinformatics Scientist with expertise in data analysis, quality assessment, and visualization, enabling me to provide critical insights that drive research and development. My experience includes direct client management from project planning through execution, identifying upsell opportunities. I excel in transforming complex datasets into actionable insights, driving advancements in biomedical sciences and supporting targeted therapy development. Please refer to [my website](https://samanwoy1989.github.io/) for my detailed [CV](https://samanwoy1989.github.io/CV.html) and [Publications](https://samanwoy1989.github.io/Publications.html).
 
 # Experience
 
