@@ -42,7 +42,7 @@ sidebar:
         - JIRA, Confluence
     - name: Education
       items:
-        - text: "Ph.D. in Biotechnoloy"
+        - text: "Ph.D. in Biotechnology"
           inst: "University of Calcutta"
           time: "2021"
           details: "Thesis: Host Transcriptome Response in Septic Shock"
@@ -106,8 +106,8 @@ I am a results-driven Bioinformatics Scientist with expertise in data analysis, 
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details,
-    "Bioinformatics Scientist", "Elucidata", "2021 - Present", "I managed multiple client projects during my 3+ years in Industry. I worked as a techinical subject matter expert for a number of projects that helped my clients achivee high quality insights that saved them time and cost getting meaning ful results to achieve there goal faster. this was mostly pharma companies trying to find drug targets or responsible for various diseases.",
-    "Senior Reasersch Fellow(PhD)", "National Institute of Biomedical Genomics", "2016 - 2020",
+    "Bioinformatics Scientist", "Elucidata", "2021 - Present", "I managed multiple client projects during my 3+ years in Industry. I worked as a technical subject matter expert for a number of projects that helped my clients achieve high quality insights that saved them time and cost getting meaning ful results to achieve there goal faster. this was mostly pharma companies trying to find drug targets or responsible for various diseases.",
+    "Senior Research Fellow(PhD)", "National Institute of Biomedical Genomics", "2016 - 2020",
     "I conducted research on a diverse range of bacterial infections, with a primary focus on host responses in sepsis, viral cancers, and COVID-19. I utilized various transcriptomic technologies to drive these investigations.",
     "Junior Research Fellow(PhD)", "National Institute of Biomedical Genomics", "2013 - 2015", "I conducted both wet lab and dry lab experiments, from collecting samples in hospitals to generating transcriptome data for my PhD project. My research focused on studying the host transcriptome response to bacterial sepsis."
 ) |>
