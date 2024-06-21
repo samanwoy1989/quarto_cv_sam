@@ -1,0 +1,135 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: Samanwoy Mukhopadhyay
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvcolor: 
+  main: B83B5E
+  accent: 6A2C70
+jobtitle: Bioinformatics Scientist
+sidebar:
+  image: 
+  bullets:
+    # - Kolkata, India
+    # - Indian
+  sections: 
+    - name: Skills
+      items:
+        - text: Omics Data Analysis
+          exp: 
+            text: "10+ years"
+            num: 1
+        - text: R
+          exp: 
+            text: "10+ yrs."
+            num: 1
+        - text: Python, Bash, SQL
+          exp: 
+            text: "3 yrs."
+            num: 0.3
+        - text: Rmarkdown,Quarto,Shiny
+          exp: 
+            text: "5 yrs."
+            num: 0.5
+    - name: Tools
+      items:
+        - Git
+        - Jupyter
+        - RStudio
+        - VS Code
+        - Terminal 
+    - name: Education
+      items:
+        - text: "Ph.D. in Biotechnoloy"
+          inst: "University of Calcutta"
+          time: "2021"
+          details: "Thesis: Host Transcriptome Response in Septic Shock"
+        - text: "M.Sc. in Zoology"
+          inst: "University of Calcutta"
+          time: "2012"
+    - name: Contact
+      items:
+        - icon: map-marker
+          text: Bengaluru, India
+        - icon: phone
+          text: "+91 8981163530"
+        - icon: envelope
+          text: m.samanwoy@gmail.com
+        - icon: home
+          text: my website
+          href: https://samanwoy1989.github.io/
+        - icon: github
+          text: my github
+          href: https://github.com/samanwoy1989
+execute: 
+  echo: false
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+
+cvproj <- function(tbl,what,role,items){
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x)paste0(x,collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+```
+
+# Summary
+
+I am a results-driven Bioinformatics Scientist with a proven track record in both industry and academia. My expertise spans data analysis, quality assessment, and visualization, providing critical insights that drive research and development. I excel at transforming complex datasets into **actionable insights**, advancing biomedical sciences, and supporting targeted therapy development. My academic background includes advanced transcriptomic data analysis and the creation of reproducible research packages, enhancing research capabilities and driving innovation.
+
+# Experience
+
+```{r}
+#| label: experience
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    "Bioinformatics Scientist", "Elucidata", "2021 - Present", "I managed multiple client projects during my 3+ years in Industry. I worked as a techinical subject matter expert for a number of projects that helped my clients achivee high quality insights that saved them time and cost getting meaning ful results to achieve there goal faster. this was mostly pharma companies trying to find drug targets or responsible for various diseases.",
+    "Senior Reasersch Fellow(PhD)", "National Institute of Biomedical Genomics", "2016 - 2020",
+    "I conducted research on a diverse range of bacterial infections, with a primary focus on host responses in sepsis, viral cancers, and COVID-19. I utilized various transcriptomic technologies to drive these investigations.",
+    "Junior Research Fellow(PhD)", "National Institute of Biomedical Genomics", "2013 - 2015", "I conducted both wet lab and dry lab experiments, from collecting samples in hospitals to generating transcriptome data for my PhD project. My research focused on studying the host transcriptome response to bacterial sepsis."
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Projects
+
+See my [github profile](https://github.com/samanwoy1989){style="color: red;"} for a comprehensive list of open source projects.\
+
+```{r}
+#| label: proj
+#| output: asis
+tibble::tribble(
+    ~what, ~role, ~items,
+    "Single-Cell RNASeq and Gene Similarity Analysis (2022-2024)", "Technical SME", c("Analyzed single-cell RNASeq data and established pipelines for gene similarity in siRNA treatments. Enhanced research capabilities, streamlined data analysis processes, and saved significant time and financial resources for clients by facilitating the development of targeted therapies."),
+    "Cancer and Transcriptomics Projects (2021-2024)", "Technical SME", c("Conducted transcriptomics, proteomics, and meta-analysis across various cancers for different clients. Streamlined data analysis, accelerated insights into diverse cancer types, and delivered actionable results efficiently as a Technical SME."),
+    "Role of a specific protein in COVID-19 through omics data analysis", "Technical SME",
+    c("Evaluated the role of a protein of interest in COVID-19 through omics data analysis, providing critical insights. Accelerated research efforts, saved significant time and costs in planning future experiments for a reputed academic lab as a Technical SME."),
+    "Microbiome and Tuberculosis Projects (2022-2024)", "Technical SME",
+    c("Conducted data audits and quality assessments, ensuring data reliability for microbiome and tuberculosis projects. Prevented costly errors and rework, saved clients time and resources by providing high-quality data from the outset, enhancing the accuracy of downstream analyses."
+    )
+) |>
+    cvproj(what = "what", role = "role", items = "items")
+
+```
