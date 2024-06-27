@@ -14,41 +14,6 @@ sidebar:
     # - Kolkata, India
     # - Indian
   sections: 
-    - name: Skills
-      items:
-        - text: Omics Data Analysis
-          exp: 
-            text: "10+ years"
-            num: 1
-        - text: R
-          exp: 
-            text: "10+ yrs."
-            num: 1
-        - text: Python, Bash, SQL
-          exp: 
-            text: "3 yrs."
-            num: 0.3
-        - text: Rmarkdown,Quarto,Shiny
-          exp: 
-            text: "5 yrs."
-            num: 0.5
-    - name: Tools
-      items:
-        - Git
-        - Jupyter
-        - RStudio
-        - VS Code
-        - Terminal
-        - JIRA, Confluence
-    - name: Education
-      items:
-        - text: "Ph.D. in Biotechnology"
-          inst: "University of Calcutta"
-          time: "2021"
-          details: "Thesis: Host Transcriptome Response in Septic Shock"
-        - text: "M.Sc. in Zoology"
-          inst: "University of Calcutta"
-          time: "2012"
     - name: Contact
       items:
         - icon: map-marker
@@ -63,6 +28,41 @@ sidebar:
         - icon: github
           text: my github
           href: https://github.com/samanwoy1989
+    - name: Skills
+      items:
+        - text: Omics Data Analysis
+          exp: 
+            text: "10+ years"
+            num: 1
+        - text: R, RStudio, Linux
+          exp: 
+            text: "10+ yrs."
+            num: 1
+        - text: Python, Bash, SQL, Git, JIRA, Confluence
+          exp: 
+            text: "3 yrs."
+            num: 0.3
+        - text: Rmarkdown, Jupyter, Quarto, Shiny
+          exp: 
+            text: "5 yrs."
+            num: 0.5
+    # - name: Tools
+    #   items:
+    #     - Git
+    #     - Jupyter
+    #     - RStudio
+    #     - VS Code
+    #     - Terminal
+    #     - JIRA, Confluence
+    - name: Education
+      items:
+        - text: "Ph.D. in Biotechnology"
+          inst: "University of Calcutta"
+          time: "2021"
+          details: "Thesis: Host Transcriptome Response in Septic Shock"
+        # - text: "M.Sc. in Zoology"
+        #   inst: "University of Calcutta"
+        #   time: "2012"
 execute: 
   echo: false
 ---
@@ -126,10 +126,7 @@ tibble::tribble(
     "Single-Cell RNASeq and Gene Similarity Analysis (2022-2024)", "Technical SME", c("Analyzed single-cell RNASeq data and established pipelines for gene similarity in siRNA treatments. Enhanced research capabilities, streamlined data analysis processes, and saved significant time and financial resources for clients by facilitating the development of targeted therapies."),
     "Cancer and Transcriptomics Projects (2021-2024)", "Technical SME", c("Conducted transcriptomics, proteomics, and meta-analysis across various cancers for different clients. Streamlined data analysis, accelerated insights into diverse cancer types, and delivered actionable results efficiently as a Technical SME."),
     "Role of a specific protein in COVID-19 through omics data analysis", "Technical SME",
-    c("Evaluated the role of a protein of interest in COVID-19 through omics data analysis, providing critical insights. Accelerated research efforts, saved significant time and costs in planning future experiments for a reputed academic lab as a Technical SME."),
-    "Microbiome and Tuberculosis Projects (2022-2024)", "Technical SME",
-    c("Conducted data audits and quality assessments, ensuring data reliability for microbiome and tuberculosis projects. Prevented costly errors and rework, saved clients time and resources by providing high-quality data from the outset, enhancing the accuracy of downstream analyses."
-    )
+    c("Evaluated the role of a protein of interest in COVID-19 through omics data analysis, providing critical insights. Accelerated research efforts, saved significant time and costs in planning future experiments for a reputed academic lab as a Technical SME.")
 ) |>
     cvproj(what = "what", role = "role", items = "items")
 
