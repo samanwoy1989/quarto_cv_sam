@@ -40,11 +40,11 @@ sidebar:
             num: 1
         - text: Python, Bash, SQL, Git, JIRA, Confluence
           exp: 
-            text: "3 yrs."
-            num: 0.3
-        - text: Rmarkdown, Jupyter, Quarto, Shiny
+            text: "4+ yrs."
+            num: 0.4
+        - text: Rmarkdown,Jupyter, Quarto, Shiny
           exp: 
-            text: "5 yrs."
+            text: "5+ yrs."
             num: 0.5
     # - name: Tools
     #   items:
