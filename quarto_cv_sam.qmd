@@ -9,15 +9,15 @@ cvcolor:
   accent: 6A2C70
 jobtitle: Bioinformatics Scientist
 sidebar:
-  image: 
+  # image: 
   bullets:
     # - Kolkata, India
     # - Indian
   sections: 
     - name: Contact
       items:
-        - icon: map-marker
-          text: Bengaluru, India
+        # - icon: map-marker
+        #   text: Bengaluru, India
         - icon: phone
           text: "+91 8981163530"
         - icon: envelope
@@ -97,7 +97,7 @@ cvproj <- function(tbl,what,role,items){
 
 # Summary
 
-I am a results-driven Bioinformatics Scientist with expertise in data analysis, quality assessment, and visualization, enabling me to provide critical insights that drive research and development. My experience includes direct client management from project planning through execution, identifying upsell opportunities. I excel in transforming complex datasets into actionable insights, driving advancements in biomedical sciences and supporting targeted therapy development. Please refer to [my website](https://samanwoy1989.github.io/) for my detailed [CV](https://samanwoy1989.github.io/CV.html) and [Publications](https://samanwoy1989.github.io/Publications.html).
+I am a results-driven Bioinformatics Scientist with expertise in data analysis, quality assessment, and visualization, enabling me to provide critical insights that drive research and development. My experience includes direct client management from project planning through execution, identifying up-sell opportunities. I excel in transforming complex datasets into actionable insights, driving advancements in biomedical sciences and supporting targeted therapy development. Please refer to [my website](https://samanwoy1989.github.io/) for my detailed [CV](https://samanwoy1989.github.io/CV.html) and [Publications](https://samanwoy1989.github.io/Publications.html).
 
 # Experience
 
@@ -106,28 +106,20 @@ I am a results-driven Bioinformatics Scientist with expertise in data analysis, 
 #| output: asis
 tibble::tribble(
     ~role, ~institution, ~dates, ~details,
-    "Bioinformatics Scientist", "Elucidata", "2021 - Present", "I managed multiple client projects during my 3+ years in Industry. I worked as a technical subject matter expert for a number of projects that helped my clients achieve high quality insights that saved them time and cost getting meaning ful results to achieve there goal faster. this was mostly pharma companies trying to find drug targets or responsible for various diseases.",
+    "Bioinformatics Scientist", "Elucidata", "2021 - Present", "Over the past 4 years in the industry, I have managed multiple client projects, primarily for pharmaceutical companies. As a technical subject matter expert in bioinformatics analysis, visualization, and insight generation, I have played a pivotal role in delivering high-quality insights. I handled projects ranging from oncology, analyzing tumor microenvironments and drug efficacy, to COVID-19 research, gene biomarker discovery, pathway enrichment, and survival analysis. Collaborating with various team members, I provided key insights that helped clients achieve their goals faster, significantly reducing time and costs. Additionally, I have interviewed and recruited individuals for various roles, fulfilling staffing needs multiple times.",
     "Senior Research Fellow(PhD)", "National Institute of Biomedical Genomics", "2016 - 2020",
-    "I conducted research on a diverse range of bacterial infections, with a primary focus on host responses in sepsis, viral cancers, and COVID-19. I utilized various transcriptomic technologies to drive these investigations.",
-    "Junior Research Fellow(PhD)", "National Institute of Biomedical Genomics", "2013 - 2015", "I conducted both wet lab and dry lab experiments, from collecting samples in hospitals to generating transcriptome data for my PhD project. My research focused on studying the host transcriptome response to bacterial sepsis."
+    "As a senior research fellow, I led investigations into diverse bacterial infections, focusing on host responses in sepsis, viral cancers, and COVID-19 using advanced transcriptomic technologies. I mentored junior researchers, organized academic conferences, and promoted scientific collaboration, enhancing knowledge exchange and professional growth in the field.",
+    "Junior Research Fellow(PhD)", "National Institute of Biomedical Genomics", "2013 - 2015", "As the first student under my supervisor, I gained hands-on experience in setting up a new lab, conducting a wide range of wet lab and dry lab experiments. My focus was on collecting clinical samples, generating transcriptome data for my PhD project, optimizing protocols, and managing grant writing and various documents for sample collection. These experiences significantly enhanced my expertise in clinical research methodologies."
 ) |>
     cvevents(when = "dates", what = "role", where = "institution", descr = "details")
 ```
 
 # Projects
 
-See my [github profile](https://github.com/samanwoy1989){style="color: red;"} for a comprehensive list of open source projects.\
+See my [website](https://samanwoy1989.github.io/){style="color: red;"} for a comprehensive list projects handled by me over the years. Mentioning a few Impactful Project here.
 
-```{r}
-#| label: proj
-#| output: asis
-tibble::tribble(
-    ~what, ~role, ~items,
-    "Single-Cell RNASeq and Gene Similarity Analysis (2022-2024)", "Technical SME", c("Analyzed single-cell RNASeq data and established pipelines for gene similarity in siRNA treatments. Enhanced research capabilities, streamlined data analysis processes, and saved significant time and financial resources for clients by facilitating the development of targeted therapies."),
-    "Cancer and Transcriptomics Projects (2021-2024)", "Technical SME", c("Conducted transcriptomics, proteomics, and meta-analysis across various cancers for different clients. Streamlined data analysis, accelerated insights into diverse cancer types, and delivered actionable results efficiently as a Technical SME."),
-    "Role of a specific protein in COVID-19 through omics data analysis", "Technical SME",
-    c("Evaluated the role of a protein of interest in COVID-19 through omics data analysis, providing critical insights. Accelerated research efforts, saved significant time and costs in planning future experiments for a reputed academic lab as a Technical SME.")
-) |>
-    cvproj(what = "what", role = "role", items = "items")
+-   **Microbiome and Tuberculosis (2022-2024):** Conducted comprehensive audits and meta-analyses to ensure data reliability and accuracy, crucial for advancing Tuberculosis research for a leading organization.
 
-```
+-   **Cancer Biology (2022-2023):** Provided critical insights into tumor micro-environment and biology, evaluating the impact of treatments on tumor survival, pivotal for advancing cancer treatment strategies for multiple clients.
+
+-   **Bioinformatics Packaged Solutions (2021-2024):** Developed and implemented custom bioinformatics analysis frameworks, offering tailored solutions for diverse scientific needs. These innovations were utilized as unique service offerings, enhancing client capabilities effectively.
